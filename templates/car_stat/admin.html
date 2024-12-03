@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Административная панель</title>
+</head>
+<body>
+    <h1>Административная панель</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit" name="collect">Собрать данные</button>
+        <button type="submit" name="export">Скачать Excel</button>
+    </form>
+</body>
+</html>

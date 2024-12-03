@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Запрос статистики</title>
+    <link rel="shortcut icon" href="#" />
+</head>
+<body style="padding-left:20px">
+    <p><a href="/admin">Заполните фразы для поиска в админ-панели</a></p>
+    <h1>Запрос статистики</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit" name="collect">Собрать данные</button>
+        <button type="submit" name="export">Скачать Excel</button>
+    </form>
+</body>
+</html>
